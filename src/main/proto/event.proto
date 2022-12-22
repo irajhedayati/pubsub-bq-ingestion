@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+option java_package = "ca.dataedu";
+
+message Event {
+  required string id = 1;
+  required string url = 2;
+  required int64 user_id = 3;
+  required int64 timestamp = 4;
+}
+message EventV2 {
+  required string id = 1;
+  required string url = 2;
+  required int64 user_id = 3;
+  required int64 timestamp = 4;
+  optional string new_field = 5;
+}
